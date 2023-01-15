@@ -77,5 +77,14 @@ class MainKtTest {
 
         assertEquals(35, result)
     }
+    @Test
+    fun comissionError() {
+        val type = "Visa"
+        val previous = 0
+        val amount = 100
+        val result = comission(type, previous, amount)
+
+        assertEquals(1000, result)
+    }
 
 }
